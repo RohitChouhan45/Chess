@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chess Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chess.js for game logic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <!-- Note: The disco ball effect will be added automatically by JavaScript -->
+</head>
+<body>
+  <header>
+    <h1>Chess Game</h1>
+    <p>Welcome to the Chess Game! Play against the computer or challenge a friend.</p>
+  </header>
+  <main>
+  <div class="container">
+    <div class="game-controls">
+      <select id="theme" class="theme-selector">
+        <option value="classic">Classic Theme</option>
+        <option value="forest">Forest Theme</option>
+        <option value="ocean">Ocean Theme</option>
+        <option value="desert">Desert Theme</option>
+        <option value="snow">Snow Theme</option>
+      </select>
+      <select id="difficulty" class="difficulty-selector">
+        <option value="1">Beginner (Depth 1)</option>
+        <option value="2">Intermediate (Depth 2)</option>
+        <option value="3">Advanced (Depth 3)</option>
+        <option value="4">Expert (Depth 4)</option>
+      </select>
+      <button id="newGame" class="button">New Game</button>
+      <div id="status"></div>
+    </div>
+    <div class="board-container">
+      <div id="board" class="board classic"></div>
+    </div>
+    
+    <div class="game-info">
+      <div id="captured-pieces">
+        <h3>Captured Pieces</h3>
+        <div id="captured-white" class="captured"></div>
+        <div id="captured-black" class="captured"></div>
+      </div>
+      <div id="move-count">
+        <h3>Move Count</h3>
+      <div id="move-history"></div>
+    </div>
+  </div>
+  </main>
+  
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
