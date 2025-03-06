@@ -1,6 +1,6 @@
-import { ChessBoard } from 'board.js';
+import { ChessBoard } from './board.js';
 import { ChessAI } from './ai.js';
-import { PieceRenderer } from 'pieces.js';
+import { PieceRenderer } from './pieces.js';
 import { SoundManager } from './sound.js';
 import { ConfettiCelebration } from './confetti.js';
 
